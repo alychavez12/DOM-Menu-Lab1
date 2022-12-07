@@ -21,11 +21,13 @@ mainEl.innerHTML = '<h1>SEI Rocks!</h1>';
 mainEl.classList.add('flex-ctr');
 
 //Task 2.0
-//Select and cache the <nav id="top-menu">element in a variable named topMenuEl.
+//Select and cache the <nav id="top-menu"> element in a variable named topMenuEl.
 
+const topMenuEl = document.getElementById('top-menu');
+console.log(topMenuEl);
 
 //Task 2.1
-//Set the height topMenuElelement to be 100%.
+//Set the height topMenuEl element to be 100%.
 
 
 //Task 2.2
