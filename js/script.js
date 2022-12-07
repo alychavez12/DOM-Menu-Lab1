@@ -52,11 +52,18 @@ topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 topMenuEl.classList = 'flex-around';
 
 
-
-
-
 //Task 3.1
 //Iterate over the entire menuLinksarray and for each "link" object:
+
+var index;
+for (index = 0; index < menuLinks.length; index++) {
+  var a = document.createElement("a");
+  var text = document.createTextNode(menuLinks[index].text)
+  a.appendChild(text);
+  a.href = menuLinks[index].href
+  topMenuEl.appendChild(a);
+  console.log(a);
+}
 
 //Create an <a>element.
 
@@ -65,3 +72,5 @@ topMenuEl.classList = 'flex-around';
 //Set the new element's content to the value of the textproperty of the "link" object.
 
 //Append the new element to the topMenuElelement.
+
+
