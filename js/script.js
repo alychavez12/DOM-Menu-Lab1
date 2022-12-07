@@ -37,7 +37,10 @@ console.log(topMenuEl);
 topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 
 //Task 2.3
-//Add a class of flex-aroundto topMenuEl.
+//Add a class of flex-around to topMenuEl.
+
+topMenuEl.classList.add = 'flex-around';
+
 
 //Task 3.0
 //Copy the following data structure to the top of script.js:
