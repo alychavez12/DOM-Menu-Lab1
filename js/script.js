@@ -55,22 +55,27 @@ topMenuEl.classList = 'flex-around';
 //Task 3.1
 //Iterate over the entire menuLinksarray and for each "link" object:
 
-var index;
-for (index = 0; index < menuLinks.length; index++) {
+ var index;
+ for (index = 0; index < menuLinks.length; index++) {
+  //Create an <a>element.
   var a = document.createElement("a");
-  var text = document.createTextNode(menuLinks[index].text)
+  //On the new element, add an href attribute with its value set to the href property of the "link" object.
+  a.href = menuLinks[index].href;
+  var text = document.createTextNode(menuLinks[index].text);
+  //Set the new element's content to the value of the text property of the "link" object.
   a.appendChild(text);
-  a.href = menuLinks[index].href
+  //Append the new element to the topMenuElelement.
   topMenuEl.appendChild(a);
   console.log(a);
 }
 
-//Create an <a>element.
 
-//On the new element, add an hrefattribute with its value set to the hrefproperty of the "link" object.
 
-//Set the new element's content to the value of the textproperty of the "link" object.
 
-//Append the new element to the topMenuElelement.
+
+
+
+
+
 
 
